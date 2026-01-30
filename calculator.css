@@ -1,0 +1,297 @@
+/* Calculator page background (keeps your site vibe but shows a light card) */
+.calc-page{
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc-wrap{
+  width: min(520px, 96vw);
+  text-align: center;
+}
+
+.calc-title{
+  font-weight: 700;
+  font-size: 44px;
+  letter-spacing: 1px;
+  margin: 0 0 22px;
+}
+
+/* Card like the screenshot */
+.calc-card{
+  background: #f7f7f7;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 28px rgba(0,0,0,.45);
+  color: #111;
+}
+
+/* top row: display + C */
+.calc-top{
+  display: grid;
+  grid-template-columns: 1fr 78px;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calc-display{
+  height: 46px;
+  border-radius: 6px;
+  border: 2px solid rgba(0,0,0,.25);
+  background: #bfe6f1; /* light blue like screenshot */
+  padding: 10px 12px;
+  font-size: 20px;
+  text-align: left;
+  outline: none;
+}
+
+.calc-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* button base */
+.btn{
+  height: 62px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.15);
+  background: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(0,0,0,.06);
+}
+
+.btn:active{
+  transform: translateY(1px);
+}
+
+/* operators on right */
+.btn-op{
+  background: #e5b428; /* yellow */
+  font-weight: 700;
+}
+
+/* equals */
+.btn-eq{
+  background: #2d9bd6; /* blue */
+  color: #fff;
+  font-weight: 800;
+}
+
+/* clear button */
+.btn-clear{
+  height: 46px;
+  background: #e15a62; /* red */
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  border: 1px solid rgba(0,0,0,.15);
+}
+
+.calc-footer{
+  margin-top: 16px;
+}
+
+.calc-back{
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  opacity: .85;
+}
+
+.calc-back:hover{
+  opacity: 1;
+}
+/* =========================
+   ARTISTS PAGE — LOCKED LOOK
+   ========================= */
+
+.page-hero{
+  position: relative;
+  background:#000;
+  padding: 120px 0 70px;
+  overflow:hidden;
+}
+
+.page-hero__bg{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.95));
+  background-size: 120px 120px, cover;
+  animation: dots 60s linear infinite;
+  
+}
+
+.nav--page{
+  position: relative;
+  top: 0;
+  padding: 0 70px;
+  z-index: 2;
+}
+
+.brand-link{
+  font-size: 42px;
+  letter-spacing: 6px;
+  font-weight: 300;
+  color:#fff;
+  text-decoration:none;
+}
+
+.page-hero__content{
+  width: min(1200px, 92vw);
+  margin: 65px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.page-kicker{
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 14px;
+}
+
+.page-title{
+  font-size: 54px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.page-sub{
+  max-width: 640px;
+  color: rgba(255,255,255,.75);
+  line-height: 1.7;
+}
+
+/* MAIN */
+.artists{
+  background:#000;
+  padding: 60px 0 120px;
+}
+
+.artists__inner{
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+
+.artists__toolbar{
+  margin-bottom: 26px;
+}
+
+.toolbar-label{
+  color: rgba(255,255,255,.6);
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-right: 12px;
+}
+
+/* FILTER CHIPS */
+.chip{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.25);
+  color:#fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: .85;
+  cursor:pointer;
+  margin-right: 10px;
+}
+.chip:hover{ opacity: 1; }
+.chip.is-active{
+  border-color: rgba(255,255,255,.7);
+  opacity: 1;
+}
+
+/* GRID */
+.artists-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.artist-card{
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.6);
+  overflow:hidden;
+  transition: transform .25s ease, border-color .25s ease;
+}
+
+.artist-card:hover{
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,.35);
+}
+
+.artist-photo{
+  aspect-ratio: 4/3;
+  background:#000;
+  overflow:hidden;
+}
+
+.artist-photo img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  filter: grayscale(20%) brightness(0.85);
+  display:block;
+}
+
+.artist-meta{
+  padding: 16px 16px 18px;
+}
+
+.artist-name{
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.artist-genre{
+  color: rgba(255,255,255,.65);
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.artist-desc{
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.artist-more{
+  color:#fff;
+  text-decoration:none;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+  opacity: .85;
+  font-size: 13px;
+}
+
+.artist-more:hover{
+  opacity: 1;
+  border-color: rgba(255,255,255,.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px){
+  .artists-grid{ grid-template-columns: repeat(2, 1fr); }
+  .brand-link{ font-size: 34px; }
+}
+
+@media (max-width: 560px){
+  .nav--page{ padding: 0 20px; }
+  .artists-grid{ grid-template-columns: 1fr; }
+  .page-title{ font-size: 38px; }
+}
