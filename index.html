@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Malagasy Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+
+    <!-- animated dots -->
+    <div class="hero-bg"></div>
+
+    <!-- NAV -->
+  <nav class="nav">
+  <div class="nav-left">
+<a href="index.html" class="brand">MALAGASY MUSIC</a>   
+  </div>
+
+  <div class="nav-right nav-icons">
+    <div class="search-wrap">
+      <button id="searchBtn" class="icon-btn" aria-label="Search" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+        </svg>
+      </button>
+
+      <form class="search-panel" id="searchPanel">
+        <input
+          id="homeSearchInput"
+          type="search"
+          placeholder="Search artists, instruments, genres…"
+          autocomplete="off"
+        />
+      </form>
+    </div>
+
+    <button class="icon-btn menuBtn" id="menuBtn" aria-label="Menu" type="button">
+      <span class="menuGlyph">☰</span>
+    </button>
+  </div>
+</nav>
+    <!-- TILES -->
+    <section class="tiles">
+
+  <a class="tile artists" href="artists.html">
+    <div class="overlay"></div>
+    <div class="text">
+      <span>01</span>
+      <div class="line"></div>
+      <h2>Artists</h2>
+    </div>
+  </a>
+
+  <a class="tile instruments" href="instruments.html">
+    <div class="overlay"></div>
+    <div class="text">
+      <span>02</span>
+      <div class="line"></div>
+      <h2>Instruments</h2>
+    </div>
+  </a>
+
+  <a class="tile genres" href="genres.html">
+    <div class="overlay"></div>
+    <div class="text">
+      <span>03</span>
+      <div class="line"></div>
+      <h2>Genres</h2>
+    </div>
+  </a>
+
+</section>
+
+
+  <!-- OFFCANVAS OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+
+
+ <aside class="offcanvas" id="offcanvasMenu">
+  <button class="close-btn" id="closeMenu">✕</button>
+
+  <nav class="offcanvas-links">
+    <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="instruments.html">Instruments</a>
+    <a href="genres.html">Genres</a>
+  </nav>
+
+<div class="offcanvas-footer">
+  <!-- YouTube -->
+  <a href="https://youtube.com/@rianalaandriamparany?si=c-YhxMrsLTsRIDUe" aria-label="YouTube">
+    <svg viewBox="0 0 24 24">
+      <path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31.7 31.7 0 0 0 2 12a31.7 31.7 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 22 12a31.7 31.7 0 0 0-.4-4.8ZM10 15.3V8.7L16 12l-6 3.3Z"/>
+    </svg>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/share/1AQhtcp6TH/?mibextid=wwXIfr" aria-label="Facebook">
+    <svg viewBox="0 0 24 24">
+      <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V11H7.6v3H10v8h3.5Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/rianalaandriamparany?igsh=MWJ0c250Y214dG9ybw==" aria-label="Instagram">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2Zm0 2A1.8 1.8 0 1 0 13.8 12 1.8 1.8 0 0 0 12 10.2Z"/>
+    </svg>
+  </a>
+
+  <!-- X -->
+  <a href="https://x.com/rians1106?s=21" aria-label="X">
+    <svg viewBox="0 0 24 24">
+      <path d="M18.9 2H22l-7.6 8.7L23 22h-6.7l-5.2-6.3L5.5 22H2.3l8.2-9.4L1 2h6.9l4.7 5.7L18.9 2Z"/>
+    </svg>
+  </a>
+</div></aside>
+  </header>
+<section class="feature-section">
+  <div class="feature-inner">
+
+    <!-- LEFT IMAGE -->
+    <div class="feature-image slider">
+  <div class="slides">
+    <img src="images/madagascar-culture.jpg" alt="Malagasy music live 1">
+    <img src="images/hq720.jpg" alt="Malagasy music live 2">
+    <img src="images/16457-BIG.jpg" alt="Malagasy music live 3">
+  </div>
+</div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="feature-content">
+      <p class="feature-kicker">
+        OUR PURPOSE
+      </p>
+
+      <h2 class="feature-title">
+        A Home for Malagasy Music
+      </h2>
+
+      <p class="feature-text">
+        This platform exists to celebrate, preserve, and share the rich musical
+heritage of Madagascar. From ancestral rhythms to modern expressions,
+Malagasy music tells the story of an island shaped by culture, history,
+and diversity.
+
+Here, we explore the artists, instruments, and genres that define
+Madagascar’s unique sound — connecting tradition with the present
+and opening it to the world.
+      </p>
+
+      <div class="feature-links">
+  <a href="artists.html">Discover Malagasy artists</a>
+  <a href="instruments.html">Explore traditional instruments</a>
+  <a href="genres.html">Understand musical genres</a>
+</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="feature-section feature-section--reverse">
+  <div class="feature-inner">
+
+    <!-- LEFT CONTENT (reverse) -->
+    <div class="feature-content">
+      <p class="feature-kicker">
+        DISCOVER MORE OF MADAGASCAR
+      </p>
+
+      <h2 class="feature-title">
+        MADAGASCAR
+      </h2>
+
+      <p class="feature-text">
+    Separated from the African continent for millions of years, Madagascar
+  has developed its own rhythm, language, and way of life. The island is
+  home to diverse traditions, rich oral history, and a strong sense of
+  community that continues to shape its cultural expression today.
+</p>
+      
+
+      <div class="feature-links">
+  <a
+    href="https://en.wikipedia.org/wiki/History_of_Madagascar"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Learn more about the history of Madagascar
+  </a>
+</div>
+    </div>
+
+    <!-- RIGHT IMAGE SLIDER (reverse) -->
+    <div class="feature-image slider">
+      <div class="slides">
+        <img src="images/Untitled-design-2024-10-04T160547.785.jpg.webp" alt="Malagasy instruments 1">
+        <img src="images/madagascar-island.jpg" alt="Malagasy instruments 2">
+        <img src="images/Madagascar-1.jpg" alt="Malagasy instruments 3">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="news-section" id="news">
+  <div class="news-inner">
+    <div class="news-head">
+      <p class="news-kicker">NEWS</p>
+      <h2 class="news-title">Malagasy Music Worldwide</h2>
+      <p class="news-sub">
+        International performances, awards, and milestones by Malagasy artists.
+      </p>
+    </div>
+
+    <div class="news-grid">
+
+      <a class="news-card"  aria-label="Read: Malagasy artist performs internationally">
+        <div class="news-img">
+          <img src="images/oboy.jpg" alt="International performance" />
+        </div>
+        <div class="news-info">
+          <span class="news-tag">International performance</span>
+        </div>
+        <h3 class="news-card-title">Mihaja Ramiarinarivo, better known by his stage name Oboy, is a French rapper of Malagasy origin. He raps in the mumble rap style.
+</h3>
+      </a>
+
+      <a class="news-card"aria-label="Read: Award win">
+        <div class="news-img">
+          <img src="images/anisha.jpg" alt="Award / trophy" />
+        </div>
+        <div class="news-info">
+          <span class="news-tag">Awards</span>
+          <span class="news-date">Nov 26, 2022</span>
+        </div>
+        <h3 class="news-card-title">Anisha won the 2022 edition of the Star Academy.</h3>
+      </a>
+
+      <a class="news-card"  aria-label="Read: Award win">
+        <div class="news-img">
+          <img src="images/denise.jpg" alt="Award / trophy" />
+        </div>
+        <div class="news-info">
+          <span class="news-tag">Awards</span>
+          <span class="news-date">January 2026</span>
+        </div>
+        <h3 class="news-card-title">Malagasy singer Denise won the prestigious Best Female Artiste in Eastern Africa award at the 9th All Africa Music Awards (AFRIMA) held in Lagos, Nigeria. </h3>
+      </a>
+
+      <a class="news-card"  aria-label="Read: Award win">
+        <div class="news-img">
+          <img src="images/marghe.jpg" alt="Award / trophy" />
+        </div>
+        <div class="news-info">
+          <span class="news-tag">Awards</span>
+          <span class="news-date">May 15, 2021</span>
+        </div>
+        <h3 class="news-card-title">Marghe (Margherita Davico) is a Malagasy-Italian singer who gained prominence as the winner of The Voice: 
+          la plus belle voix (France) season 10 in 2021. </h3>
+      </a>
+
+
+      <a class="news-card"  aria-label="Read: Malagasy artist performs internationally">
+        <div class="news-img">
+          <img src="images/niu.png" alt="International performance" />
+        </div>
+        <div class="news-info">
+          <span class="news-tag">International performance</span>
+        </div>
+        <h3 class="news-card-title">Niu Raza, a Berklee alumna, is an award-winning singer-songwriter from Madagascar.
+          She is known for her unique sound which she describes as a blend between her traditional Malagasy heritage and modern music.</h3>
+      </a>
+
+
+      <a class="news-card" aria-label="Read: Live session">
+        <div class="news-img">
+          <img src="images/serge.jpg" alt="Live session " />
+        </div>
+        <div class="news-info">
+          <span class="news-tag">Live session</span>
+          <span class="news-date">2001</span>
+        </div>
+        <h3 class="news-card-title">
+A rare and intimate jazz session bringing together Malagasy and international legends. 
+Recorded in Paris in 2001, this performance captures a unique musical dialogue between Serge Rahoerson and Nivo Rahoerson, 
+alongside jazz icon Chick Corea and bassist Max Hèry.</h3>
+      </a>
+    </div> 
+  </div> 
+</section> 
+
+
+<!-- EVENTS SECTION  -->
+<section class="events-section" id="events">
+  <div class="events-inner">
+
+    <div class="events-head">
+      <p class="events-kicker">EVENTS</p>
+      <h2 class="events-title">Malagasy Music Events</h2>
+      <p class="events-sub">
+        Concerts, festivals, and international showcases featuring Malagasy artists.
+      </p>
+    </div>
+
+    <div class="events-grid">
+
+      <div class="event-card">
+        <span class="event-status jazz">Jazz Festival</span>
+        <h3 class="event-title">MADAJAZZCAR</h3>
+        <p class="event-meta">📍 Antananarivo, Madagascar · 🗓 October</p>
+        <p class="event-desc">
+          Madajazzcar is a premier, annual international jazz festival held in Antananarivo, Madagascar, typically occurring in October.
+        </p>
+      </div>
+
+      <div class="event-card">
+        <span class="event-status past">Contemporary Music & Cultural Festival</span>
+        <h3 class="event-title">Somaroho</h3>
+        <p class="event-meta">📍 Nosy Be · 🗓 August</p>
+        <p class="event-desc">
+          The Somaroho Festival is one of Madagascar’s most important contemporary music festivals, held annually in the northern city of Antsiranana (Diego-Suarez). 
+          Taking place every August, the festival brings together Malagasy artists from across the island alongside international performers.
+        </p>
+      </div>
+
+      <div class="event-card">
+        <span class="event-status past">Cultural · Music · Eco-Tourism Festival</span>
+        <h3 class="event-title">Festival Des Baleines</h3>
+        <p class="event-meta">📍 Sainte-Marie · 🗓 July–September</p>
+        <p class="event-desc">
+          The Festival des Baleines celebrates the annual migration of humpback whales along the eastern coast of Madagascar.
+          Hosted on the island of Sainte-Marie, the event blends music, environmental awareness, and local culture.
+        </p>
+      </div>
+
+    </div>
+  </div> 
+</section> 
+
+<!-- EVENTS GALLERY -->
+<section class="events-gallery">
+  <div class="events-gallery-inner">
+    <div class="events-slider">
+      <div class="events-slides">
+        <img src="images/jazz.jpg" alt="Madajazzcar Festival">
+        <img src="images/somaraho.jpg" alt="Somaroho Festival">
+        <img src="images/baleine.jpg" alt="Festival des Baleines">
+        <img src="images/madajazzcar2.jpg" alt="Madajazzcar Live">
+        <img src="images/somaroho2.jpg" alt="Somaroho Concert">
+      </div>
+</section>
+   
+
+
+<!-- FOOTER -->
+ <footer class="footer">
+
+  <div class="footer-main">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <div class="footer-brand">MALAGASY MUSIC</div>
+
+      <nav class="footer-links">
+        <a href="artists.html">Artists</a>
+        <a href="instruments.html">Instruments</a>
+        <a href="genres.html">Genres</a>
+        <a href="calculator.html">Calculator</a>
+      </nav>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <p class="footer-title">STAY CONNECTED</p>
+
+      <div class="footer-social">
+        <a href="https://youtube.com/@rianalaandriamparany" aria-label="YouTube">▶</a>
+        <a href="https://www.facebook.com/share/1AWzLKuE4q/?mibextid=wwXIfr" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/riansss.andria?igsh=aHdncmFtbWdsZ3Ji&utm_source=qr" aria-label="Instagram">◎</a>
+        <a href="https://x.com/rians1106?s=21 aria-label="X">✕</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Malagasy Music
+  </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

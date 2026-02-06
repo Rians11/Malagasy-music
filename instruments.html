@@ -1,0 +1,236 @@
+<!-- genres.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Genres | Malagasy Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="instruments.css" />
+</head>
+
+<body>
+
+ <!-- HEADER -->
+<header class="hero hero--small">
+  <div class="hero-bg"></div>
+
+  <nav class="nav">
+    <div class="nav-left">
+<a href="index.html" class="brand">MALAGASY MUSIC</a>   
+ </div>
+
+    <div class="nav-right nav-icons">
+      <div class="search-wrap">
+        <button id="searchBtn" class="icon-btn" aria-label="Search" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+          </svg>
+        </button>
+
+        <form class="search-panel" id="searchPanel">
+          <input
+            id="homeSearchInput"
+            type="search"
+            placeholder="Search artists, instruments, genres…"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+
+      <button class="icon-btn menuBtn" id="menuBtn" aria-label="Menu" type="button">
+        <span class="menuGlyph">☰</span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-header page-header--in-hero">
+    <div class="genres-spacer"></div>
+
+    <div class="genres-inner">
+
+    <div class="page-header-inner">
+      <p class="page-kicker">INSTRUMENTS</p>
+      <h1 class="page-title">Sounds of Madagascar</h1>
+      <p class="page-subtitle">Discover traditional Malagasy instruments and where they are used.</p>
+    </div>
+  </section>
+
+  <!-- OFFCANVAS -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+
+  <aside class="offcanvas" id="offcanvasMenu" aria-label="Menu Panel">
+    <button class="close-btn" id="closeMenu" type="button" aria-label="Close menu">✕</button>
+
+    <nav class="offcanvas-links">
+      <a href="index.html">Home</a>
+      <a href="artists.html">Artists</a>
+      <a href="instruments.html">Instruments</a>
+      <a href="genres.html">Genres</a>
+    </nav>
+
+    <div class="offcanvas-footer">
+      <a href="https://youtube.com/@rianalaandriamparany?si=c-YhxMrsLTsRIDUe" aria-label="YouTube" target="_blank" rel="noopener">▶</a>
+      <a href="https://www.facebook.com/share/1AQhtcp6TH/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+      <a href="https://www.instagram.com/rianalaandriamparany?igsh=MWJ0c250Y214dG9ybw==" aria-label="Instagram" target="_blank" rel="noopener">◎</a>
+      <a href="https://x.com/rians1106?s=21" aria-label="X" target="_blank" rel="noopener">✕</a>
+    </div>
+  </aside>
+</header>
+
+
+
+<div class="section-separator"></div>
+
+
+ <section class="instruments-list">
+  <div class="instruments-grid">
+
+    <article class="instrument-card">
+      <h3>Valiha</h3>
+      <p>
+        The Valiha is Madagascar’s national instrument. Made from bamboo,
+        it produces delicate, resonant melodies used in both sacred and
+        everyday music.
+      </p>
+      <span>Used in: Traditional, Folk, Salegy</span>
+    </article>
+
+    <article class="instrument-card">
+      <h3>Kabosy</h3>
+      <p>
+        The Kabosy is a small box guitar with a bright, percussive sound.
+        It is widely used in folk songs and modern Malagasy music.
+      </p>
+      <span>Used in: Folk, Pop, Salegy</span>
+    </article>
+
+    <article class="instrument-card">
+      <h3>Marovany</h3>
+      <p>
+        A box zither played on both sides, often associated with ceremonial
+        music and trance traditions.
+      </p>
+      <span>Used in: Tsapiky, Ritual music</span>
+    </article>
+
+    <article class="instrument-card">
+      <h3>Hazolahy</h3>
+      <p>
+        The Hazolahy is a traditional wooden drum from southern Madagascar, deeply connected to 
+        ancestral rituals and ceremonial gatherings.
+It is carved from solid wood and played with hands or sticks, 
+producing powerful, grounding rhythms that guide dances, storytelling, and spiritual ceremonies.
+      </p>
+      <span>Used in:Traditional rituals, ceremonial music, community celebrations</span>
+    </article>
+
+
+    <article class="instrument-card">
+      <h3>Sodina</h3>
+      <p>
+        The Sodina is a traditional Malagasy end-blown flute made from bamboo or wood.
+It produces a clear, expressive tone and is often used to accompany singing, storytelling, 
+and solo performances rooted in oral tradition.
+      </p>
+      <span>Used in: Hira Gasy, traditional folk music, storytelling performances</span>
+    </article>
+
+    <article class="instrument-card">
+      <h3>Aponga</h3>
+      <p>
+        Traditional wooden drums used in ceremonies, storytelling,
+        and community celebrations.
+      </p>
+      <span>Used in: Traditional rituals</span>
+    </article>
+
+  </div>
+
+<section class="gallery-section">
+  <div class="gallery-inner">
+    <p class="gallery-kicker">GALLERY</p>
+    <h2 class="gallery-title">Instruments Gallery</h2>
+
+    <div class="img-slider" id="imgSlider">
+      <div class="img-track" id="imgTrack">
+        <div class="img-slide"><img src="images/valiha.jpg" alt="Valiha"></div>
+        <div class="img-slide"><img src="images/kabosy.jpg" alt="Kabosy"></div>
+        <div class="img-slide"><img src="images/marovany.jpg" alt="Marovany"></div>
+        <div class="img-slide"><img src="images/sodina.jpeg" alt="Sodina"></div>
+        <div class="img-slide"><img src="images/aponga.jpg" alt="Aponga"></div>
+        <div class="img-slide"><img src="images/hazolahy.jpg" alt="Hazolahy"></div>
+
+      </div>
+
+      <button class="slider-btn prev" id="imgPrev" type="button" aria-label="Previous">‹</button>
+      <button class="slider-btn next" id="imgNext" type="button" aria-label="Next">›</button>
+    </div>
+
+    <div class="slider-dots" id="imgDots"></div>
+  </div>
+</section>
+
+<section class="instrument-demo">
+  <div class="instrument-demo__inner">
+    <p class="instrument-demo__kicker">DEMO</p>
+    <h2 class="instrument-demo__title">Instrument Performance</h2>
+    <p class="instrument-demo__sub">
+      A live demonstration showcasing the sound and spirit of traditional Malagasy instruments.
+    </p>
+
+    <div class="demo-video">
+      <iframe
+        src="https://www.youtube.com/embed/BihEupRCh1Y?t=4s"
+        title="Malagasy instrument demo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+ <footer class="footer">
+
+  <div class="footer-main">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <div class="footer-brand">MALAGASY MUSIC</div>
+
+      <nav class="footer-links">
+        <a href="artists.html">Artists</a>
+        <a href="instruments.html">Instruments</a>
+        <a href="genres.html">Genres</a>
+        <a href="calculator.html">Calculator</a>
+      </nav>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <p class="footer-title">STAY CONNECTED</p>
+
+      <div class="footer-social">
+        <a href="https://youtube.com/@rianalaandriamparany" aria-label="YouTube">▶</a>
+        <a href="https://www.facebook.com/share/1AWzLKuE4q/?mibextid=wwXIfr" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/riansss.andria?igsh=aHdncmFtbWdsZ3Ji&utm_source=qr" aria-label="Instagram">◎</a>
+        <a href="https://x.com/rians1106?s=21" aria-label="X">✕</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Malagasy Music
+  </div>
+
+</footer>
+
+ <script src="instruments.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,771 @@
+<!-- ====== artists.html ====== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Artists | Malagasy Music</title>
+  <link rel="stylesheet" href="artists.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="artists-page">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html">MALAGASY MUSIC</a>
+
+    <div class="topbar__icons">
+      <a class="icon-btn" href="index.html" aria-label="Home">⌂</a>
+    
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="artists-hero">
+    <div class="artists-hero__inner">
+      <div class="artists-hero__kicker">ARTISTS</div>
+      <h1 class="artists-hero__title">Malagasy Voices</h1>
+      <p class="artists-hero__sub">
+        Explore artists across Madagascar’s musical styles — from Salegy to Jazz, Tsapiky to Ba Gasy.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTER + SEARCH -->
+  <section class="toolbar">
+    <div class="toolbar__inner">
+      <div class="toolbar__left">
+        <span class="toolbar__label">Filter</span>
+
+        <button class="chip is-active" type="button" data-filter="all">All</button>
+        <button class="chip" type="button" data-filter="salegy">Salegy</button>
+        <button class="chip" type="button" data-filter="jazz">Jazz</button>
+        <button class="chip" type="button" data-filter="pop">Pop</button>
+        <button class="chip" type="button" data-filter="rock">Rock</button>
+        <button class="chip" type="button" data-filter="tsapiky">Tsapiky</button>
+        <button class="chip" type="button" data-filter="rap">Rap</button>
+        <button class="chip" type="button" data-filter="traditional">Traditional / Folk</button>
+        <button class="chip" type="button" data-filter="afro">Afro</button>
+        <button class="chip" type="button" data-filter="bagasy">Ba Gasy</button>
+        <button class="chip" type="button" data-filter="gospel">Gospel</button>
+        <button class="chip" type="button" data-filter="worship">Worship</button>
+      </div>
+
+      <div class="toolbar__right">
+        <input id="artistSearchInput" class="search" type="text" placeholder="Search artist..." />
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <main class="grid">
+    <div class="grid__inner">
+
+      <!-- ===== SALEGY ===== -->
+      <article class="artist-card" data-genre="salegy" data-artist="jaojoby">
+        <div class="artist-img">
+          <img src="images/Jaojoby.jpg.webp" alt="Jaojoby" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Jaojoby</h3>
+          <div class="artist-genre">Salegy</div>
+          <p class="artist-desc">High-energy Salegy icon and pioneer.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="salegy" data-artist="wawa">
+        <div class="artist-img">
+          <img src="images/wawa.jpg" alt="Wawa" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Wawa</h3>
+          <div class="artist-genre">Salegy</div>
+          <p class="artist-desc">Modern Salegy sound with strong stage presence.</p>
+        </div>
+      </article>
+
+        <article class="artist-card" data-genre="salegy" data-artist="ninie-doniah">
+        <div class="artist-img">
+          <img src="images/ninie-doniah.jpeg" alt="Ninie Doniah" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Ninie Doniah</h3>
+          <div class="artist-genre">Salegy</div>
+          <p class="artist-desc">Salegy artist known for lively rhythms and vibrant stage performances.</p>
+        </div>
+      </article>
+
+      
+
+      <!-- ===== JAZZ ===== -->
+      <article class="artist-card" data-genre="jazz" data-artist="rija-ramanantoanina">
+        <div class="artist-img">
+          <img src="images/rija.jpg" alt="Rija Ramanantoanina" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Rija Ramanantoanina</h3>
+          <div class="artist-genre">Jazz</div>
+          <p class="artist-desc">Malagasy jazz talent with refined musicality.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="jazz" data-artist="fanja-andriamanantena">
+        <div class="artist-img">
+          <img src="images/fanja.jpg.webp" alt="Fanja Andriamanantena" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Fanja Andriamanantena</h3>
+          <div class="artist-genre">Jazz</div>
+          <p class="artist-desc">Smooth jazz voice and elegant interpretations.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="jazz"  data-artist="lalao-rabeson">
+        <div class="artist-img">
+          <img src="images/lalao.jpg" alt="Lalao Rabeson" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Lalao Rabeson</h3>
+          <div class="artist-genre">Jazz</div>
+          <p class="artist-desc">Jazz performer blending Malagasy identity and groove.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="jazz" data-artist="datita-rabeson">
+        <div class="artist-img">
+          <img src="images/datita.jpg" alt="Datita Rabeson" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Datita Rabeson</h3>
+          <div class="artist-genre">Jazz</div>
+          <p class="artist-desc">Jazz musician blending Malagasy musical roots with refined jazz expression.</p>
+        </div>
+      </article>
+
+           <article class="artist-card" data-genre="jazz" data-artist="lalatiana">
+        <div class="artist-img">
+          <img src="images/lalatiana.jpg" alt="Lalatiana" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Lalatiana</h3>
+          <div class="artist-genre">Jazz</div>
+          <p class="artist-desc">Jazz singer known for her warm voice and elegant interpretations, blending Malagasy sensitivity with classic jazz influences.</p>
+        </div>
+      </article>
+
+
+      <!-- ===== POP ===== -->
+      <article class="artist-card" data-genre="pop" data-artist="njakatiana">
+        <div class="artist-img">
+          <img src="images/njakatiana.jpg" alt="Njakatiana" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Njakatiana</h3>
+          <div class="artist-genre">Pop</div>
+          <p class="artist-desc">Popular Malagasy pop singer with timeless hits.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="pop" data-artist="lola">
+        <div class="artist-img">
+          <img src="images/lola.jpg" alt="Lola" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Lola</h3>
+          <div class="artist-genre">Pop</div>
+          <p class="artist-desc">Pop melodies and modern Malagasy sound.</p>
+        </div>
+      </article>
+
+        <article class="artist-card" data-genre="pop" data-artist="nate-tex">
+        <div class="artist-img">
+          <img src="images/nate-tex.jpeg" alt="Nate Tex" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Nate Tex</h3>
+          <div class="artist-genre">Pop</div>
+          <p class="artist-desc">Contemporary pop sound mixing urban influences and smooth vocals.</p>
+        </div>
+      </article>
+
+        <article class="artist-card" data-genre="pop" data-artist="mirado">
+        <div class="artist-img">
+          <img src="images/mirado.jpeg" alt="Mirado" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Mirado</h3>
+          <div class="artist-genre">Pop</div>
+          <p class="artist-desc">Pop artist delivering catchy melodies with emotional and modern sound.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="pop" data-artist="reko-band">
+        <div class="artist-img">
+          <img src="images/reko.jpeg" alt="Reko Band" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Reko Band</h3>
+          <div class="artist-genre">Pop</div>
+          <p class="artist-desc">Band-driven pop with energetic performances.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="pop" data-artist="mr-sayda">
+        <div class="artist-img">
+          <img src="images/sayda.jpg" alt="Mr Sayda" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Mr Sayda</h3>
+          <div class="artist-genre">Pop</div>
+          <p class="artist-desc">Pop singer with a smooth and expressive style, combining contemporary pop vibes with emotional storytelling.</p>
+        </div>
+      </article>
+
+
+      <article class="artist-card" data-genre="pop" data-artist="tovo-jhay">
+        <div class="artist-img">
+          <img src="images/tovo.jpg" alt="Tovo J'hay" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Tovo J'hay</h3>
+          <div class="artist-genre">Pop</div>
+          <p class="artist-desc">Pop artist delivering catchy melodies and heartfelt lyrics, connecting modern sounds with everyday Malagasy life.</p>
+        </div>
+      </article>
+
+      <!-- ===== ROCK ===== -->
+      <article class="artist-card" data-genre="rock" data-artist="ambondrona">
+        <div class="artist-img">
+          <img src="images/ambondrona.jpg" alt="Ambondrona" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Ambondrona</h3>
+          <div class="artist-genre">Rock</div>
+          <p class="artist-desc">One of Madagascar’s most iconic rock bands.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="rock" data-artist="mage4">
+        <div class="artist-img">
+          <img src="images/mage4.jpg" alt="Mage 4" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Mage 4</h3>
+          <div class="artist-genre">Rock</div>
+          <p class="artist-desc">Rock group with strong Malagasy fanbase.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="rock" data-artist="iraimbilanja">
+        <div class="artist-img">
+          <img src="images/iraimbilanja.jpg" alt="Iraimbilanja" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Iraimbilanja</h3>
+          <div class="artist-genre">Rock</div>
+          <p class="artist-desc">Famous Malagasy rock band with classic songs.</p>
+        </div>
+      </article>
+
+
+      <!-- ===== TSAPIKY ===== -->
+      <article class="artist-card" data-genre="tsapiky" data-artist="mamy-gotso">
+        <div class="artist-img">
+          <img src="images/mamygotso.jpeg" alt="Mamy Gotso" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Mamy Gotso</h3>
+          <div class="artist-genre">Tsapiky</div>
+          <p class="artist-desc">Tsapiky rhythm and dance-driven performances.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="tsapiky" data-artist="barinjaka">
+        <div class="artist-img">
+          <img src="images/barinjaka.jpg" alt="Barinjaka" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Barinjaka</h3>
+          <div class="artist-genre">Tsapiky</div>
+          <p class="artist-desc">Fast guitar lines and energetic Tsapiky style.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="tsapiky" data-artist="tsiliva">
+        <div class="artist-img">
+          <img src="images/tsiliva.jpg" alt="Tsiliva" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Tsiliva</h3>
+          <div class="artist-genre">Tsapiky</div>
+          <p class="artist-desc">Popular Tsapiky artist from the south.</p>
+        </div>
+      </article>
+
+      <!-- ===== RAP ===== -->
+      <article class="artist-card" data-genre="rap" data-artist="agrad">
+        <div class="artist-img">
+          <img src="images/agrad.jpeg" alt="Agrad" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Agrad</h3>
+          <div class="artist-genre">Rap</div>
+          <p class="artist-desc">Rap artist bringing Malagasy stories and flow.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="rap" data-artist="18.3">
+        <div class="artist-img">
+          <img src="images/18.3.jpg" alt="18.3" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">18.3</h3>
+          <div class="artist-genre">RAP</div>
+          <p class="artist-desc">Conscious Malagasy rap group known for strong lyrics and social messages</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="rap" data-artist="skaiz">
+        <div class="artist-img">
+          <img src="images/skaiz.jpeg" alt="Skaiz" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Skaiz</h3>
+          <div class="artist-genre">Rap</div>
+          <p class="artist-desc">Urban rap sound with strong lyrical identity.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="rap" data-artist="rndr">
+        <div class="artist-img">
+          <img src="images/rndr.png" alt="RNDR" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">RNDR</h3>
+          <div class="artist-genre">Rap</div>
+          <p class="artist-desc">Modern Malagasy rap energy.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="rap" data-artist="bolo">
+        <div class="artist-img">
+          <img src="images/bolo.jpeg" alt="BOLO" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">BOLO</h3>
+          <div class="artist-genre">Rap</div>
+          <p class="artist-desc">Rap artist with raw style and street vibe.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="rap" data-artist="zakai">
+        <div class="artist-img">
+          <img src="images/zakai.jpg" alt="Zakai" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Zakai</h3>
+          <div class="artist-genre">RAP</div>
+          <p class="artist-desc">Modern rap voice with introspective themes and authentic urban sound.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="rap" data-artist="rao-lossa">
+        <div class="artist-img">
+          <img src="images/RaoLossa.jpg" alt="Rao Lossa" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Rao Lossa</h3>
+          <div class="artist-genre">RAP</div>
+          <p class="artist-desc">Rap artist combining street realism with sharp lyrical storytelling.</p>
+        </div>
+      </article>
+
+      <!-- ===== TRADITIONAL/FOLLK  ===== -->
+      <article class="artist-card" data-genre="traditional" data-artist="bessa">
+        <div class="artist-img">
+          <img src="images/bessa.jpeg" alt="Bessa" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Bessa</h3>
+          <div class="artist-genre">Traditional/Folk</div>
+          <p class="artist-desc">Classic Malagasy sounds and folk inspiration.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="traditional" data-artist="mahaleo">
+        <div class="artist-img">
+          <img src="images/mahaleo.jpg" alt="Mahaleo" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Mahaleo</h3>
+          <div class="artist-genre">Traditional/Folk</div>
+          <p class="artist-desc">Legendary Malagasy band with meaningful lyrics.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="traditional" data-artist="henri-ratsimbazafy">
+        <div class="artist-img">
+          <img src="images/henri.jpg" alt="Henri Ratsimbazafy" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Henri Ratsimbazafy</h3>
+          <div class="artist-genre">Traditional/Folk</div>
+          <p class="artist-desc">Traditional Malagasy artist and cultural voice.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="traditional" data-artist="erick-manana">
+        <div class="artist-img">
+          <img src="images/erick.jpeg" alt="Erick Manana" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Erick Manana</h3>
+          <div class="artist-genre">Traditional/Folk</div>
+          <p class="artist-desc">Master of Malagasy guitar and folk storytelling.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="traditional" data-artist="njara-marcel">
+        <div class="artist-img">
+          <img src="images/njara.jpg" alt="Njara Marcel" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Njara Marcel</h3>
+          <div class="artist-genre">Traditional/Folk</div>
+          <p class="artist-desc">Folk singer-songwriter known for poetic lyrics and acoustic arrangements rooted in Malagasy tradition. </p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="traditional" data-artist="Samoëla">
+        <div class="artist-img">
+          <img src="images/samoëla.jpg" alt="Samoëla" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Samoëla</h3>
+          <div class="artist-genre">Traditional/Folk</div>
+          <p class="artist-desc">Iconic Malagasy folk artist whose music combines acoustic guitar, heartfelt vocals, and strong social commentary.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="traditional" data-artist="Mahaleo">
+        <div class="artist-img">
+          <img src="images/mahaleo.jpg" alt="Mahaleo" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Mahaleo</h3>
+          <div class="artist-genre">Folk</div>
+          <p class="artist-desc">Legendary Malagasy folk band known for acoustic-driven songs, poetic lyrics, and strong social messages. </p>
+        </div>
+      </article>
+            
+      <!-- ===== AFRO ===== -->
+      <article class="artist-card" data-genre="afro" data-artist="basta-lion">
+        <div class="artist-img">
+          <img src="images/Basta-Lion.jpg" alt="Basta Lion" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Basta Lion</h3>
+          <div class="artist-genre">Afro</div>
+          <p class="artist-desc">Afro Malagasy vibes with dance energy.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="afro" data-artist="lion-hill">
+        <div class="artist-img">
+          <img src="images/lion.jpeg" alt="Lion Hill" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Lion Hill</h3>
+          <div class="artist-genre">Afro</div>
+          <p class="artist-desc">Afro-influenced sound with urban touch.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="afro" data-artist="ljo"> 
+        <div class="artist-img">
+          <img src="images/ljo.jpeg" alt="Ljo" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Ljo</h3>
+          <div class="artist-genre">Afro</div>
+          <p class="artist-desc">Afro-pop / afro-urban direction and style.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="pop afro" data-artist="rootsman">
+        <div class="artist-img">
+          <img src="images/rootsman.jpg" alt="Rootsman" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Rootsman</h3>
+          <div class="artist-genre">Afro</div>
+          <p class="artist-desc">Afro roots sound and island energy.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="afro" data-artist="anatal">
+        <div class="artist-img">
+          <img src="images/ANATAL.jpg" alt="Anatal" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Anatal</h3>
+          <div class="artist-genre">Afro</div>
+          <p class="artist-desc">Afro Malagasy artist with modern rhythms.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="afro" data-artist="wadayoongs">
+        <div class="artist-img">
+          <img src="images/wadayoongs.jpeg" alt="Wada & Yoongs" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Wada & Yoongs</h3>
+          <div class="artist-genre">Afro</div>
+          <p class="artist-desc">Afro-urban sound with energetic beats and a modern Malagasy touch.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="pop afro" data-artist="shyn">
+  <div class="artist-img">
+    <img src="images/shyn.jpg" alt="Shyn" />
+  </div>
+  <div class="artist-card__body">
+    <h3 class="artist-name">Shyn</h3>
+    <div class="artist-genre">Afro / Pop</div>
+    <p class="artist-desc">
+      Pop-Afro artist blending modern melodies with Afro-inspired rhythms and urban style.
+    </p>
+  </div>
+</article>
+
+<article class="artist-card" data-genre="pop afro" data-artist="denise">
+  <div class="artist-img">
+    <img src="images/denise.jpeg" alt="Denise" />
+  </div>
+  <div class="artist-card__body">
+    <h3 class="artist-name">Denise</h3>
+    <div class="artist-genre">Afro / Pop</div>
+    <p class="artist-desc">
+      Pop-Afro singer known for emotional vocals and smooth Afro-influenced sounds.
+    </p>
+  </div>
+</article>
+
+
+       <article class="artist-card" data-genre="afro" data-artist="big-mj">
+        <div class="artist-img">
+          <img src="images/bigmj.jpeg" alt="Big MJ" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Big MJ</h3>
+          <div class="artist-genre">Afro</div>
+          <p class="artist-desc">Afro-inspired artist bringing smooth rhythms and contemporary island vibes.</p>
+        </div>
+      </article>
+
+      <!-- ===== BA GASY ===== -->
+      <article class="artist-card" data-genre="bagasy" data-artist="zandry-gasy">
+        <div class="artist-img">
+          <img src="images/zandry-gasy.png" alt="Zandry Gasy" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Zandry Gasy</h3>
+          <div class="artist-genre">Ba Gasy</div>
+          <p class="artist-desc">Ba Gasy spirit with traditional Malagasy feel.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="bagasy" data-artist="kalony-fahiny">
+        <div class="artist-img">
+          <img src="images/kalonyfahiny.jpeg" alt="Kalon’ny Fahiny" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Kalon’ny Fahiny</h3>
+          <div class="artist-genre">Ba Gasy</div>
+          <p class="artist-desc">Classic Malagasy heritage songs and culture.</p>
+        </div>
+      </article>
+
+      <!-- ===== GOSPEL ===== -->
+      <article class="artist-card" data-genre="gospel" data-artist="jaws-band">
+        <div class="artist-img">
+          <img src="images/jawsband.jpeg" alt="JAWS Band" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">JAWS Band</h3>
+          <div class="artist-genre">Gospel</div>
+          <p class="artist-desc">Gospel group bringing powerful voices.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="gospel" data-artist="tgc">
+        <div class="artist-img">
+          <img src="images/tgc.jpeg" alt="TGC" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">TGC</h3>
+          <div class="artist-genre">Gospel</div>
+          <p class="artist-desc">Malagasy gospel performances and uplifting songs.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="gospel"  data-artist="singers-of-jesus">
+        <div class="artist-img">
+          <img src="images/singers.jpg" alt="Singers of Jesus" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Singers of Jesus</h3>
+          <div class="artist-genre">Gospel</div>
+          <p class="artist-desc">Harmony and worship-focused gospel group.</p>
+        </div>
+      </article>
+
+        <article class="artist-card" data-genre="gospel" data-artist="meva-gospel">
+        <div class="artist-img">
+          <img src="images/mevagospel.webp" alt="Meva Gospel" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Meva Gospel</h3>
+          <div class="artist-genre">Gospel</div>
+          <p class="artist-desc">Gospel group delivering powerful worship songs with strong harmonies and spiritual depth.</p>
+        </div>
+      </article>
+
+          <article class="artist-card" data-genre="gospel" data-artist="gmmc">
+        <div class="artist-img">
+          <img src="images/gmmc.jpg" alt="GMMC" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">GMMC</h3>
+          <div class="artist-genre">Gospel</div>
+          <p class="artist-desc">Gospel music collective blending modern worship with traditional Malagasy influences.</p>
+        </div>
+      </article>
+
+        
+
+      <!-- ===== WORSHIP ===== -->
+      <article class="artist-card" data-genre="worship" data-artist="henika">
+        <div class="artist-img">
+          <img src="images/henika.jpg" alt="Henika" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Henika</h3>
+          <div class="artist-genre">Worship</div>
+          <p class="artist-desc">Worship songs with modern Malagasy style.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="worship" data-artist="rojo-ny-avo">
+        <div class="artist-img">
+          <img src="images/rojonyavo.jpg" alt="Rojo Ny Avo" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Rojo Ny Avo</h3>
+          <div class="artist-genre">Worship</div>
+          <p class="artist-desc">Worship group known for deep spiritual songs and powerful moments of praise.</p>
+        </div>
+      </article>
+
+        <article class="artist-card" data-genre="gospel" data-artist="antsa-kristy">
+        <div class="artist-img">
+          <img src="images/antsa.jpeg" alt="Antsa an'i Kristy" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Antsa an'i Kristy</h3>
+          <div class="artist-genre">Gospel</div>
+          <p class="artist-desc">Worship group focused on praise and devotion through harmonious and uplifting songs</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="worship" data-artist="joseph-daf">
+        <div class="artist-img">
+          <img src="images/josephdaf.jpeg" alt="Joseph d'af" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Joseph d'af</h3>
+          <div class="artist-genre">Worship</div>
+          <p class="artist-desc">Worship artist delivering heartfelt praise songs with strong faith and devotion.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="worship" data-artist="lovatiana">
+        <div class="artist-img">
+          <img src="images/lovatiana.jpg" alt="Lovatiana" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Lovatiana</h3>
+          <div class="artist-genre">Worship</div>
+          <p class="artist-desc">Worship artist known for gentle melodies and heartfelt praise songs, inspiring moments of prayer, faith, and spiritual reflection.</p>
+        </div>
+      </article>
+
+       <article class="artist-card" data-genre="worship" data-artist="mialy-rakotomamonjy">
+        <div class="artist-img">
+          <img src="images/mialyrakotomamonjy.jpg" alt="Mialy Rakotomamonjy" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Mialy Rakotomamonjy</h3>
+          <div class="artist-genre">Worship</div>
+          <p class="artist-desc">Worship singer known for gentle vocals and inspiring spiritual melodies.</p>
+        </div>
+      </article>
+
+      <article class="artist-card" data-genre="worship" data-artist="rija-rasolondraibe">
+        <div class="artist-img">
+          <img src="images/rijaR.jpg" alt="Rija Rasolondraibe" />
+        </div>
+        <div class="artist-card__body">
+          <h3 class="artist-name">Rija Rasolondraibe</h3>
+          <div class="artist-genre">Worship</div>
+          <p class="artist-desc">Worship artist with spiritual focus and melodies.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+      
+   
+   </div>
+<!-- FOOTER -->
+ <footer class="footer">
+
+  <div class="footer-main">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <div class="footer-brand">MALAGASY MUSIC</div>
+
+      <nav class="footer-links">
+        <a href="artists.html">Artists</a>
+        <a href="instruments.html">Instruments</a>
+        <a href="genres.html">Genres</a>
+        <a href="calculator.html">Calculator</a>
+      </nav>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <p class="footer-title">STAY CONNECTED</p>
+
+      <div class="footer-social">
+        <a href="https://youtube.com/@rianalaandriamparany" aria-label="YouTube">▶</a>
+        <a href="https://www.facebook.com/share/1AWzLKuE4q/?mibextid=wwXIfr" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/riansss.andria?igsh=aHdncmFtbWdsZ3Ji&utm_source=qr" aria-label="Instagram">◎</a>
+        <a href="https://x.com/rians1106?s=21" aria-label="X">✕</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Malagasy Music
+  </div>
+
+</footer>
+
+  <script src="artists.js"></script>
+</body>
+</html>

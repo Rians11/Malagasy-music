@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator | Malagasy Music</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="calculator.css" />
+</head>
+
+<body class="calc-page">
+
+  <main class="calc-wrap">
+    <h1 class="calc-title">Calculator App</h1>
+
+    <section class="calc-card" aria-label="Calculator">
+      <div class="calc-top">
+        <input id="display" class="calc-display" type="text" value="" readonly aria-label="Calculator display" />
+        <button class="btn btn-clear" type="button" data-action="clear">C</button>
+      </div>
+
+      <div class="calc-grid" role="group" aria-label="Calculator buttons">
+        <!-- Row 1 -->
+        <button class="btn" data-value="7" type="button">7</button>
+        <button class="btn" data-value="8" type="button">8</button>
+        <button class="btn" data-value="9" type="button">9</button>
+        <button class="btn btn-op" data-value="/" type="button">/</button>
+
+        <!-- Row 2 -->
+        <button class="btn" data-value="4" type="button">4</button>
+        <button class="btn" data-value="5" type="button">5</button>
+        <button class="btn" data-value="6" type="button">6</button>
+        <button class="btn btn-op" data-value="*" type="button">*</button>
+
+        <!-- Row 3 -->
+        <button class="btn" data-value="1" type="button">1</button>
+        <button class="btn" data-value="2" type="button">2</button>
+        <button class="btn" data-value="3" type="button">3</button>
+        <button class="btn btn-op" data-value="-" type="button">-</button>
+
+        <!-- Row 4 -->
+        <button class="btn" data-value="0" type="button">0</button>
+        <button class="btn" data-value="." type="button">.</button>
+        <button class="btn btn-eq" data-action="equals" type="button">=</button>
+        <button class="btn btn-op" data-value="+" type="button">+</button>
+      </div>
+
+      <div class="calc-footer">
+        <a class="calc-back" href="index.html">← Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
