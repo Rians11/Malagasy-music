@@ -108,3 +108,25 @@
 .calc-back:hover{
   opacity: 1;
 }
+@media (max-width: 600px){
+  .calculator, .calc, .container, .wrapper{
+    width: min(520px, 92vw) !important;
+    margin: 0 auto !important;
+  }
+
+  /* Try to fix display row overflow */
+  .display, .screen, .result, .calc-display{
+    display: flex !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  input[type="text"], input[type="display"], #display{
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .clear, #clear, #clearBtn{
+    flex: 0 0 64px !important;
+  }
+}
