@@ -163,26 +163,27 @@ img{display:block;max-width:100%}
   .artists-hero__title{ font-size: 34px; }
   .grid__inner{ grid-template-columns: 1fr; }
 }
-/* ===== MOBILE SPACING FIX ===== */
+/* =========================
+   MOBILE FIX – GENRES ONLY
+========================= */
 @media (max-width: 600px){
 
-  /* Genre / section titles */
-  .genre-name,
-  .artists-hero__title,
-  .page-title{
-    margin-top: 24px;
-    margin-bottom: 20px;
+  /* Empêche le collage des marges (mobile) */
+  .genres-page,
+  .genres-inner{
+    padding-top: 1px;
   }
 
-  /* Small kicker above titles */
-  .page-kicker,
-  .artists-hero__kicker,
-  .genres-kicker{
-    margin-bottom: 12px;
-  }
-
-  /* Section blocks spacing */
+  /* Espace entre chaque genre */
   .genre-block{
-    margin-bottom: 80px;
+    padding-top: 32px;   /* espace sûr (ne collapse pas) */
+    margin-top: 20px;
   }
+
+  /* Le nom du genre */
+  .genre-name{
+    margin: 0 0 16px;    /* reset propre */
+    line-height: 1.2;    /* évite que ça se colle visuellement */
+  }
+
 }
