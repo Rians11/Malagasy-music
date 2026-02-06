@@ -108,7 +108,3 @@
 .calc-back:hover{
   opacity: 1;
 }
-<div class="calc-top">
-        <input id="display" class="calc-display" type="text" value="" readonly aria-label="Calculator display" />
-        <button class="btn btn-clear" type="button" data-action="clear">C</button>
-      </div>
