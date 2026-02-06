@@ -108,3 +108,37 @@
 .calc-back:hover{
   opacity: 1;
 }
+/* ===== Calculator responsive fix (mobile) ===== */
+.calculator-wrap{
+  width: min(520px, 92vw);
+  margin: 0 auto;
+}
+
+.calc-display{
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.calc-display input{
+  flex: 1;
+  min-width: 0;          /* super important pour éviter overflow */
+}
+
+.calc-display .clear{
+  flex: 0 0 64px;        /* largeur fixe du C */
+}
+
+/* buttons grid */
+.calc-keys{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+/* Mobile extra safety */
+@media (max-width: 420px){
+  .calc-display .clear{ flex-basis: 56px; }
+  .calc-keys{ gap: 10px; }
+}
