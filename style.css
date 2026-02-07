@@ -855,7 +855,7 @@ body{
 
 
   /* ===== FEATURE SECTIONS (MOBILE = TEXT TOP, IMAGE BOTTOM) ===== */
-@media (max-width: 600px){
+
 
   .feature-section{
     padding: 70px 0;
