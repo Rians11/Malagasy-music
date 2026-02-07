@@ -753,8 +753,10 @@ body{
 
 
 
+
+
 /* =========================
-   FINAL MOBILE FIX (CLEAN & STABLE)
+   FINAL MOBILE FIX
 ========================= */
 @media (max-width: 600px){
 
@@ -769,7 +771,7 @@ body{
 
   /* ===== HERO ===== */
   .hero{
-    height: 100svh; /* iOS safe viewport */
+    height: 100svh; 
   }
 
   /* ===== NAV ===== */
@@ -868,13 +870,15 @@ body{
     gap:36px;
   }
 
-  /* FEATURE IMAGE (NOT MINIMIZED) */
+  /* FEATURE IMAGE*/
   .feature-image,
   .feature-image.slider{
-    height:140px;
+    width:100%;
+    height:auto;           
+    aspect-ratio: 16 / 10;       
     border-radius:14px;
     overflow:hidden;
-    border:1px solid rgba(255,255,255,.12);
+    border:1px solid   rgba(255,255,255,.12);
     background:#000;
   }
 
@@ -884,15 +888,6 @@ body{
     height:100%;
     object-fit:cover;
     display:block;
-  }
-
-  .feature-title{
-    font-size: 30px;
-  }
-
-  .feature-text{
-    font-size: 15px;
-    line-height:1.65;
   }
 
   /* ===== NEWS ===== */
